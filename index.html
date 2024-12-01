@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>食事サポートサイト</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>食事サポートサイト</h1>
+  </header>
+  <main>
+    <section id="upload-section">
+      <h2>食事情報をアップロード</h2>
+      <form id="meal-form">
+        <div class="meal-upload">
+          <label for="breakfast-photo">朝食の写真:</label>
+          <input type="file" id="breakfast-photo" accept="image/*">
+          <label for="breakfast-calories">カロリー:</label>
+          <input type="number" id="breakfast-calories" placeholder="kcal">
+          <label for="breakfast-protein">タンパク質:</label>
+          <input type="number" id="breakfast-protein" placeholder="g">
+        </div>
+
+        <div class="meal-upload">
+          <label for="lunch-photo">昼食の写真:</label>
+          <input type="file" id="lunch-photo" accept="image/*">
+          <label for="lunch-calories">カロリー:</label>
+          <input type="number" id="lunch-calories" placeholder="kcal">
+          <label for="lunch-protein">タンパク質:</label>
+          <input type="number" id="lunch-protein" placeholder="g">
+        </div>
+
+        <button type="button" id="submit-meal">晩御飯の献立を提案</button>
+      </form>
+    </section>
+    <section id="summary-section">
+      <h2>今日の摂取量</h2>
+      <div id="summary">
+        <p>朝食カロリー: <span id="breakfast-cal-summary">0</span> kcal</p>
+        <p>昼食カロリー: <span id="lunch-cal-summary">0</span> kcal</p>
+        <p>総カロリー: <span id="total-cal-summary">0</span> kcal</p>
+        <p>タンパク質合計: <span id="total-protein-summary">0</span> g</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2024 食事サポートサイト</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
